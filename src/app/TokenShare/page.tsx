@@ -101,11 +101,11 @@ export default function TokenTransfer() {
                 {transactions.length === 0 ? (
                     <p>No transactions yet</p>
                 ) : (
-                    <div className="space-y-3">
+                    <div className="space-y-3 text-black">
                         {transactions.map((tx, index) => (
                             <div
                                 key={index}
-                                className={`p-3 border rounded-lg ${tx.status === 'success' ? 'bg-green-50' : 'bg-red-50'}`}
+                                className={`p-3 border rounded-lg ${tx.status === 'success' ? 'bg-gray-50' : 'bg-red-50'}`}
                             >
                                 <div className="flex justify-between">
                                     <span className="font-medium">{tx.status === 'success' ? '✅' : '❌'} Transfer</span>
